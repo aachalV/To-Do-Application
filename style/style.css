@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  h2{
+    text-align: center;
+    padding-top: 30px;
+  }
+ .row {  
+    width: 65%;
+    margin: 10px auto; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #f6f6f6;
+    box-shadow:   0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: #f6f6f6; */
+  }
+  form .row {
+    box-shadow:   0 0px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  .form-task {
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:  #f1f1f1; */
+    padding: 20px;
+    border: none;
+  }
+  input[type=text] {
+    width: 530px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+  .form-button{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  .task {
+    flex: 70%;
+    /* background-color:  #f1f1f1; */
+    padding: 20px;
+  }
+  .btn-center {
+    display: flex;
+    flex: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    background-color: #3bc333; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .form-btn {
+    background-color: #62bae8 ;
+    color: black;
+    margin: 10px;
+    border: none;
+  }
+  
+  .form-btn:hover {
+    background-color: #93b61a;
+    color: white;
+  }
+  .del-btn {
+    background-color: #c3c3c3;
+    color: black;
+    border: none;
+  }
+  
+  .del-btn:hover {
+    background-color: #555555;
+    color: white;
+  }
+  .del-btn:focus{
+      border-color: none;
+  }
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+    .form-button {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    input[type=text]{
+      width: 80%;
+    }
+  }
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}

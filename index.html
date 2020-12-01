@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoForm</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- LOAD FAKER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script> 
+    <script src="./src/main.js" type="module"></script>
+</head>
+<body>
+    <h2>To Do List</h2>
+    
+        <form action="" name="userInput">
+        <div class="row" >
+            <div class="form-task">
+                <input  type="text" name="taskInput" id="taskInput" placeholder="Enter Task">
+            </div>
+            <div class="form-button">
+                <button class="button form-btn" type="submit">Add Task</button>
+                <button class="button form-btn" type="reset">Clear Input</button>
+            </div>   
+        </div> 
+        </form>
+    
+    <div id="task-row">
+        <div class="row" id="single-row">
+
+            <div class="task">
+                <p id="taskid">Task1</p>
+            </div>
+            <div class="btn-center">
+                <button class="button del-btn" type="reset">Delete Task</button>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
