@@ -1,7 +1,8 @@
 import { taskConstructor } from "./taskConstructor.js";
 import { Task } from "../components/task.js";
 import { isInputValid } from "./inputValidation.js";
-import { toDoList } from "./toDoList.js";
+import { getStoredTodo, storetoDoList } from "./toDoList.js";
+import {toDoLocalArray} from "../main.js";
 
 export const formSubmission = (event) => {
     event.preventDefault();
@@ -12,11 +13,16 @@ export const formSubmission = (event) => {
         //const taskObject = new taskConstructor(document.forms.userInput.taskInput.value);
         const taskObject = new taskConstructor(event.target.taskInput.value);
 
-        toDoList.push(taskObject);
+        //ToDoList.push(taskObject);
+        //storetoDoList(ToDoList);
         //toDoList(taskObject);
 
         //document.getElementById("userList").appendChild(Task(taskObject));
         document.getElementById("task-row").appendChild(Task(taskObject));
+        //const existingtasks = getStoredTodo(); //array
+        //console.log(existingtasks);
+        toDoLocalArray.push(taskObject);
+        storetoDoList(toDoLocalArray); //toLocalStorage
         
         event.target.taskInput.value = "";
     }
