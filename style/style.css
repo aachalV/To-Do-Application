@@ -4,9 +4,15 @@
   }
   
   body {
+    position: relative;
     font-family: Arial;
     margin: 0;
+    padding-bottom: 155.19px;
+    /* min-height: 100vh; */
   }
+  /* NavBar */
+  
+  /* ToDoList */
   h2{
     text-align: center;
     padding-top: 30px;
@@ -138,3 +144,39 @@
 @media only screen and (min-width: 992px) {
   
 }
+/*Footer  */
+  footer {
+    background-color: black;
+    color: white;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+footer .social-links a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+.text span{
+    color: #fcec10;
+  }
+/* Responsive Footer */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .social-icons .fa {
+      padding: 10px;
+    }
+    .social-icons{
+      margin-top: 6%;
+    } 
+    .text{
+        text-align: center;
+    }
+}
+  
