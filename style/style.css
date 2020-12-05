@@ -114,6 +114,9 @@
     /* background-color:  #f1f1f1; */
     padding: 20px;
   }
+  .task p{
+    word-wrap: break-word;
+  }
   .btn-center {
     display: flex;
     flex: 30%;
@@ -168,32 +171,44 @@
     .form-button {
       flex-direction: column;
     }
+    
   }
   @media screen and (max-width: 900px) {
     input[type=text]{
       width: 80%;
+    }
+    .task{
+      overflow: auto;
     }
   }
 
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
+  .task{
+    overflow: auto;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
+  .task{
+    overflow: auto;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
+  .task{
+    overflow: auto;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  
+  .task{
+    overflow: auto;
+  }
 }
 /*Footer  */
   footer {
