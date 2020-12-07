@@ -23,9 +23,12 @@
           <i class="fa fa-bars"></i>
         </a>
     </div>
-
-    <h2>To Do List</h2>    
-        <form action="" name="userInput">
+    <div class="to-do-heading">
+        <img src="./images/fountain-pen-close-up.svg" alt="pen">
+        <h2>To Do List</h2>            
+    </div>
+     
+        <form onsubmit="formSubmission(event)" name="userInput">
         <div class="row" >
             <div class="form-task">
                 <input  type="text" name="taskInput" id="taskInput" placeholder="Enter Task">
@@ -38,7 +41,7 @@
         </form>
     
     <div id="task-row">
-        <div class="row">
+        <!-- <div class="row">
             
             <div class="task">
                 <p>task</p>
@@ -57,7 +60,7 @@
                 </div>
             </div>
     
-        </div>
+        </div> -->
         <!-- <div class="row">
             
             <div class="task">

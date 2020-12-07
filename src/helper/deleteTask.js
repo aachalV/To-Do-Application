@@ -1,4 +1,3 @@
-//import { deleteTodoStorage } from "./deleteTodoStorage.js";
 import {toDoLocalArray, updateLocalArray} from "../main.js";
 
 // export const deleteTask = (event) => {

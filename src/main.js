@@ -2,10 +2,10 @@ import { formSubmission } from "./helper/formSubmission.js";
 import { storetoDoList ,getStoredTodo} from "./helper/toDoList.js";
 import { deleteElement } from "./helper/deleteTask.js";
 import { Task } from "./components/task.js";
+import {taskStatus , taskStatusChange } from "./helper/taskStatus.js";
 
 export let toDoLocalArray = [];
 window.onload = () => {
-    document.forms.userInput.addEventListener('submit', formSubmission);
     //document.getElementById("task-row").addEventListener('click', deleteTask);
     
     //document.addEventListener("DOMContentLoaded", () => {
@@ -17,15 +17,17 @@ window.onload = () => {
             console.log(toDoLocalArray);
             toDoLocalArray.forEach((task) => {
             //Task(task); //render tasks on load
-            document.getElementById("task-row").appendChild(Task(task));
+            //document.getElementById("task-row").appendChild(Task(task));
+            Task();
           });
         } 
      //});
 };
-//window.deleteTask = deleteTask;
 window.deleteElement = deleteElement;
-
+window.taskStatusChange = taskStatusChange;
+window.formSubmission = formSubmission;
 export const updateLocalArray = (updatedArray) => {
   toDoLocalArray = updatedArray;
   storetoDoList(toDoLocalArray);
+  // document.getElementById("task-row").appendChild(Task(taskObject));
 };

@@ -1,17 +1,5 @@
 import { createCustomError } from "./createCustomError.js";
 
-// export const isNotEmpty = (taskValue) => {
-//     let status = 1;
-//         if (taskValue == "") {
-//             status = 0;
-//             createCustomError("Empty String !!", "Please enter a task and then submit");
-//             return false;
-//         }
-//         else {
-//             return true;
-//         }
-    
-// };
 export const isNotTag = (taskValue) => {
     if (taskValue.includes('<')) {
         createCustomError("Html Tags !!", "Please enter a valid task and then submit");

@@ -1,9 +1,8 @@
 //for creating a task
 //basic structure
 
-export const taskConstructor = function(description,status) {
+export const taskConstructor = function(description) {
     this.description = description ;
     this.taskId = faker.random.uuid();
-    this.status = status ;
-    
+    this.completedStatus = false;
 };
