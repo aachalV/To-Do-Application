@@ -23,11 +23,11 @@
   
 ### External Links Used
   -   Font-awesome : [ https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ]
-  -   FAKER : [<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>]
+  -   FAKER : [ <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"> </script> ]
 
 ### Deployed
   - Hosted using GitHub Pages
-  - click here [] for live Demo
+  - click [here] (https://aachalv.github.io/To-Do-Application/) for live Demo
       > To run the project locally clone it and run the index.html file using live server 
       
  
